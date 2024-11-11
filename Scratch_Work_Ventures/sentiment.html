@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis - MyInvest</title>
+  <link rel="stylesheet" href="sentiment.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="home.html">MyInvest</a></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="sentiment.html">Sentiment Analysis</a>
+      <a href="about.html">About</a>
+      <a href="future_features.html">Coming Soon</a>
+    </nav>
+    <a href="sentiment.html" class="cta">Analyze Stocks Now</a>
+  </header>
+
+  <section class="stock-analysis centered-content">
+    <h1>Sentiment Analysis</h1>
+    <input type="text" placeholder="Search for a stock...">
+    <br><br>
+
+    <div class="stock-overview">
+      <h2>Apple Inc. (AAPL)</h2>
+      <p>Current Price: $250.00</p>
+      <span class="sentiment-score">Sentiment Score: Positive</span>
+    </div>
+
+    <div class="sentiment-trend">
+      <h3>Sentiment Trend</h3>
+      <canvas id="sentimentChart"></canvas>
+    </div>
+    <br>
+
+    <div class="recommendation">
+        <h3>Recommendation</h3>
+        <p>This stock has positive sentiment, consider for a safe investment.</p>
+    </div>
+    
+    <br>
+
+    <a href="home.html" class="cta">How It Works</a>
+    <br>
+    <br>
+    <br>
+
+    <!-- Updated Latest News Section -->
+    <div class="news-list">
+      <h3>Latest News</h3>
+      <div class="news-cards">
+        <div class="news-card">
+          <h4>Article 1</h4>
+          <p>Sentiment: Positive</p>
+          <p>A brief summary of the article goes here, describing the key points and how it relates to Apple stock performance.</p>
+        </div>
+
+        <div class="news-card">
+          <h4>Article 2</h4>
+          <p>Sentiment: Neutral</p>
+          <p>This article offers a balanced view on the company's recent announcements, with minimal impact on its stock price.</p>
+        </div>
+
+        <div class="news-card">
+          <h4>Article 3</h4>
+          <p>Sentiment: Negative</p>
+          <p>In this article, concerns over market volatility are expressed, possibly affecting investor confidence in the short term.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact | Privacy Policy | Terms of Service</p>
+    <div class="socials">
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="sentiment.js"></script>
+</body>
+</html>
